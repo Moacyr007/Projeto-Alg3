@@ -14,7 +14,7 @@ public class Jogo {
     private int id;
     private String nome;
     private String desenvolvedor;
-    private float preco;
+    private String preco;
     private String tipo;
     private String classificacaoIndicativa;
 
@@ -56,14 +56,14 @@ public class Jogo {
     /**
      * @return the preco
      */
-    public float getPreco() {
+    public String getPreco() {
         return preco;
     }
 
     /**
      * @param preco the preco to set
      */
-    public void setPreco(float preco) {
+    public void setPreco(String preco) {
         this.preco = preco;
     }
 

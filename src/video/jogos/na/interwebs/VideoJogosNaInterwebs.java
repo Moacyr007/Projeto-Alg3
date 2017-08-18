@@ -5,7 +5,7 @@
  */
 package video.jogos.na.interwebs;
 
-import br.ufmt.alg3.videoJogos.view.PrincipalJFrame;
+import br.ufmt.ic.alg3.videoJogos.view.PrincipalJFrame;
 
 /**
  *

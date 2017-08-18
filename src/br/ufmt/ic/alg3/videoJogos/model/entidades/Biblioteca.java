@@ -11,6 +11,7 @@ package br.ufmt.ic.alg3.videoJogos.model.entidades;
  */
 public class Biblioteca {
     
+   private String asda;
     private int idUsuario;
     private int idJogo;
 
