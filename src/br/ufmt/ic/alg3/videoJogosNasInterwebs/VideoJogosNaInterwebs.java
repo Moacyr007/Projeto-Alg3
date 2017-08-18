@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package video.jogos.na.interwebs;
+package br.ufmt.ic.alg3.videoJogosNasInterwebs;
 
 import br.ufmt.ic.alg3.videoJogos.view.PrincipalJFrame;
 

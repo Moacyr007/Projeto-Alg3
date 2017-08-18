@@ -31,6 +31,9 @@ public class PrincipalJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu2 = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
         conteudojPanel = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         cadastrarjMenu = new javax.swing.JMenu();
@@ -38,6 +41,17 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         jogojMenuItem = new javax.swing.JMenuItem();
         entrarjMenu = new javax.swing.JMenu();
         EntrarjMenuItem = new javax.swing.JMenuItem();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenu4 = new javax.swing.JMenu();
+        jMenuItem3 = new javax.swing.JMenuItem();
+
+        jMenu2.setText("File");
+        jMenuBar2.add(jMenu2);
+
+        jMenu3.setText("Edit");
+        jMenuBar2.add(jMenu3);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(600, 450));
@@ -84,6 +98,23 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         entrarjMenu.add(EntrarjMenuItem);
 
         jMenuBar1.add(entrarjMenu);
+
+        jMenu1.setText("Usuário");
+
+        jMenuItem1.setText("Entrar");
+        jMenu1.add(jMenuItem1);
+
+        jMenuItem2.setText("Cadastrar");
+        jMenu1.add(jMenuItem2);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu4.setText("Desenvolvedor");
+
+        jMenuItem3.setText("Entrar");
+        jMenu4.add(jMenuItem3);
+
+        jMenuBar1.add(jMenu4);
 
         setJMenuBar(jMenuBar1);
 
@@ -171,7 +202,15 @@ public class PrincipalJFrame extends javax.swing.JFrame {
     private javax.swing.JMenu cadastrarjMenu;
     private javax.swing.JPanel conteudojPanel;
     private javax.swing.JMenu entrarjMenu;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jogojMenuItem;
     private javax.swing.JMenuItem usuariojMenuItem;
     // End of variables declaration//GEN-END:variables
