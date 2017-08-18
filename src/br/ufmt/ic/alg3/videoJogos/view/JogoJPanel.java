@@ -210,7 +210,7 @@ public class JogoJPanel extends javax.swing.JPanel {
         // Salvar o jogo aqui
         Jogo novo = new Jogo();
         novo.setNome(nomejTextField.getText());
-        novo.setPreco(precojTextField.getText()); //Arrumar essa parte aqui que não ta convertendo
+        //novo.setPreco(precojTextField.getText()); //Arrumar essa parte aqui que não ta convertendo
         novo.setTipo(tipojTextField.getText());
         novo.setClassificacaoIndicativa(classIndcjTextField.getText());
         novo.setDesenvolvedor(desenvolvedorjTextField.getText());
