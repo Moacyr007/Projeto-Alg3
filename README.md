@@ -1,1 +1,2 @@
-# Projeto Alg 3 - Vídeo Jogos Nas Interwebs - Em desenvolvimento
+﻿# Projeto da disciplina de Algoritmos 3 - Em desenvolvimento
+		Vídeo Jogos Nas Interwebs  
