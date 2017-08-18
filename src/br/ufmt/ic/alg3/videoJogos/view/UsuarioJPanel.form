@@ -44,16 +44,18 @@
                           </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="salvarjButton" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="cancelarjButton" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="salvarjButton" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace pref="57" max="32767" attributes="0"/>
+                                  <Component id="cancelarjButton" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="nomejTextField" max="32767" attributes="0"/>
+                              <Component id="emailjTextField" max="32767" attributes="0"/>
+                              <Component id="senhajPasswordField" max="32767" attributes="0"/>
+                              <Component id="dataNascjTextField" max="32767" attributes="0"/>
                           </Group>
-                          <Component id="nomejTextField" max="32767" attributes="0"/>
-                          <Component id="emailjTextField" max="32767" attributes="0"/>
-                          <Component id="senhajPasswordField" max="32767" attributes="0"/>
-                          <Component id="dataNascjTextField" max="32767" attributes="0"/>
                           <Component id="idjTextField" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -69,8 +71,8 @@
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="128" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="idjTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="idjLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="idjTextField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
