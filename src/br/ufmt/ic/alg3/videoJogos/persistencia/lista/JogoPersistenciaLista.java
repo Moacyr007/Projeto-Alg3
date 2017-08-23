@@ -17,7 +17,7 @@ import java.util.List;
 public class JogoPersistenciaLista
         implements JogoPersistencia {
 
-    private List lista = new ArrayList();
+    protected List lista = new ArrayList();
 
     
     public void inserir(Jogo jogo) {
