@@ -7,7 +7,7 @@ package br.ufmt.ic.alg3.videoJogos.view;
 
 import br.ufmt.ic.alg3.videoJogos.model.entidades.Jogo;
 import br.ufmt.ic.alg3.videoJogos.persistencia.JogoPersistencia;
-import br.ufmt.ic.alg3.videoJogos.persistencia.lista.JogoPersistenciaLista;
+import br.ufmt.ic.alg3.videoJogos.persistencia.arquivo.JogoPersistenciaArquivo;
 import javax.swing.JOptionPane;
 
 /**
@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
 public class JogoJPanel extends javax.swing.JPanel {
 
     private static JogoPersistencia
-            banco = new JogoPersistenciaLista();
+            banco = new JogoPersistenciaArquivo();
     
     /**
      * Creates new form JogoJPanel

@@ -7,7 +7,7 @@ import java.util.List;
 public class BibliotecaPersistenciaLista 
         implements BibliotecaPersistencia {
     private List lista = new ArrayList();
-    @Override
+    
     public void inserir(Biblioteca novoBiblioteca) {
     int ultimoId = 0;
         if (lista.size() > 0) {

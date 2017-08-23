@@ -17,8 +17,9 @@ import java.util.List;
 public class UsuarioPersistenciaLista
         implements UsuarioPersistencia {
 
-    private List lista = new ArrayList();
+    protected List lista = new ArrayList();
 
+    @Override
     public void inserir(Usuario usuario) {
         int ultimoId = 0;
         if (lista.size() > 0) {
@@ -32,6 +33,7 @@ public class UsuarioPersistenciaLista
         System.out.println(lista.size());
     }
 
+    @Override
     public void alterar(Usuario usuario) {
         for (int i = 0; i < lista.size(); i++) {
             Usuario elem = (Usuario) lista.get(i);
@@ -41,6 +43,8 @@ public class UsuarioPersistenciaLista
         }
     }
 
+    
+    @Override
     public void remover(Usuario usuario) {
         int posicao = 0;
 
@@ -57,6 +61,7 @@ public class UsuarioPersistenciaLista
     }
 
 
+    @Override
     public Usuario buscar(int id, String email, String nome) {
         for (int i = 0; i < lista.size(); i++) {
             Usuario elem = (Usuario) lista.get(i);
@@ -73,6 +78,7 @@ public class UsuarioPersistenciaLista
         return null;
     }
 
+    @Override
     public List<Usuario> getAll(){
         return lista;
     }   

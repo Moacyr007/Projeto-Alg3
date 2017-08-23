@@ -1,5 +1,5 @@
 
-package PersistenciaLista;
+package br.ufmt.ic.alg3.videoJogos.persistencia.lista;
 import Entidades.BoletoBancario;
 import Persistencia.persistenciaBoletoBancario;
 import br.ufmt.ic.alg3.videoJogos.persistencia.BoletoBancarioPersistencia;

@@ -8,7 +8,7 @@ package br.ufmt.ic.alg3.videoJogos.view;
 import br.ufmt.ic.alg3.videoJogos.view.ProcurarAmigos;
 import br.ufmt.ic.alg3.videoJogos.model.entidades.Usuario;
 import br.ufmt.ic.alg3.videoJogos.persistencia.UsuarioPersistencia;
-import br.ufmt.ic.alg3.videoJogos.persistencia.lista.UsuarioPersistenciaLista;
+import br.ufmt.ic.alg3.videoJogos.persistencia.arquivo.UsuarioPersistenciaArquivo;
 import javax.swing.JOptionPane;
 
 
@@ -19,7 +19,7 @@ import javax.swing.JOptionPane;
 public class UsuarioJPanel extends javax.swing.JPanel {
 
     private static UsuarioPersistencia 
-                banco = new UsuarioPersistenciaLista();
+                banco = new UsuarioPersistenciaArquivo();
     
     /**
      * Creates new form UsuarioJPanel

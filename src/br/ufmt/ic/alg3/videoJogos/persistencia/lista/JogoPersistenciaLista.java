@@ -20,6 +20,7 @@ public class JogoPersistenciaLista
     protected List lista = new ArrayList();
 
     
+    @Override
     public void inserir(Jogo jogo) {
         int ultimoId = 0;
         if (lista.size() > 0) {
@@ -34,6 +35,7 @@ public class JogoPersistenciaLista
     }
 
     
+    @Override
     public void alterar(Jogo jogo) {
         for (int i = 0; i < lista.size(); i++) {
             Jogo elem = (Jogo) lista.get(i);
@@ -44,6 +46,7 @@ public class JogoPersistenciaLista
     }
 
     
+    @Override
     public void remover(Jogo jogo) {
         int posicao = 0;
 
@@ -60,6 +63,7 @@ public class JogoPersistenciaLista
     }
 
 
+    @Override
     public Jogo buscar(int id, String desenvolvedor, String nome) {
         for (int i = 0; i < lista.size(); i++) {
             Jogo elem = (Jogo) lista.get(i);
@@ -77,6 +81,7 @@ public class JogoPersistenciaLista
     }
 
     
+    @Override
     public List<Jogo> getAll(){
         return lista;
     }
