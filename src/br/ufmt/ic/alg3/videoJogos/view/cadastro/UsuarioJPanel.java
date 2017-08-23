@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.ufmt.ic.alg3.videoJogos.view;
+package br.ufmt.ic.alg3.videoJogos.view.cadastro;
 
 import br.ufmt.ic.alg3.videoJogos.view.ProcurarAmigos;
 import br.ufmt.ic.alg3.videoJogos.model.entidades.Usuario;
 import br.ufmt.ic.alg3.videoJogos.persistencia.UsuarioPersistencia;
 import br.ufmt.ic.alg3.videoJogos.persistencia.arquivo.UsuarioPersistenciaArquivo;
+import br.ufmt.ic.alg3.videoJogos.view.tableModel.UsuarioTableModel;
 import javax.swing.JOptionPane;
 
 
@@ -45,8 +46,6 @@ public class UsuarioJPanel extends javax.swing.JPanel {
         emailjTextField = new javax.swing.JTextField();
         senhajPasswordField = new javax.swing.JPasswordField();
         dataNascjTextField = new javax.swing.JTextField();
-        idjLabel = new javax.swing.JLabel();
-        idjTextField = new javax.swing.JTextField();
         salvarjButton = new javax.swing.JButton();
         cancelarjButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -61,15 +60,6 @@ public class UsuarioJPanel extends javax.swing.JPanel {
         senhajLabel.setText("Senha:");
 
         dataNascjLabel.setText("DataNasc:");
-
-        idjLabel.setText("ID:");
-
-        idjTextField.setEnabled(false);
-        idjTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                idjTextFieldActionPerformed(evt);
-            }
-        });
 
         salvarjButton.setText("Salvar");
         salvarjButton.addActionListener(new java.awt.event.ActionListener() {
@@ -94,44 +84,34 @@ public class UsuarioJPanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(253, 253, 253)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(147, 147, 147)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(dataNascjLabel, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(senhajLabel, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(emailjLabel)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(idjLabel)
-                                    .addComponent(nomejLabel))))
+                                .addComponent(nomejLabel)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(salvarjButton)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
-                                    .addComponent(cancelarjButton))
-                                .addComponent(nomejTextField)
-                                .addComponent(emailjTextField)
-                                .addComponent(senhajPasswordField)
-                                .addComponent(dataNascjTextField))
-                            .addComponent(idjTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(198, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(salvarjButton)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(cancelarjButton))
+                            .addComponent(emailjTextField)
+                            .addComponent(senhajPasswordField)
+                            .addComponent(dataNascjTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
+                            .addComponent(nomejTextField))))
+                .addContainerGap(292, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(221, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 128, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(idjLabel)
-                    .addComponent(idjTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(69, 69, 69)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(nomejLabel)
                     .addComponent(nomejTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -151,13 +131,9 @@ public class UsuarioJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(salvarjButton)
                     .addComponent(cancelarjButton))
-                .addGap(98, 98, 98))
+                .addGap(123, 123, 123))
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    private void idjTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idjTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_idjTextFieldActionPerformed
 
     private void cancelarjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarjButtonActionPerformed
         nomejTextField.setText("");
@@ -204,8 +180,6 @@ public class UsuarioJPanel extends javax.swing.JPanel {
     private javax.swing.JTextField dataNascjTextField;
     private javax.swing.JLabel emailjLabel;
     private javax.swing.JTextField emailjTextField;
-    private javax.swing.JLabel idjLabel;
-    private javax.swing.JTextField idjTextField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel nomejLabel;
     private javax.swing.JTextField nomejTextField;

@@ -1,6 +1,8 @@
 
 package br.ufmt.ic.alg3.videoJogos.view;
 
+import br.ufmt.ic.alg3.videoJogos.view.tableModel.UsuarioTableModel;
+
 /**
  *
  * @author Moacyr
@@ -31,7 +33,7 @@ public class ProcurarAmigos extends javax.swing.JPanel {
         setMinimumSize(new java.awt.Dimension(600, 450));
         setRequestFocusEnabled(false);
 
-        tabelaProcurarAmigosjTable.setModel(new UsuarioTableModel(banco.getAll()));
+        tabelaProcurarAmigosjTable.setModel(new JogoTableModel(banco.getAll()));
         jScrollPane1.setViewportView(tabelaProcurarAmigosjTable);
 
         conteudoProcurarAmigosjLabel.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N

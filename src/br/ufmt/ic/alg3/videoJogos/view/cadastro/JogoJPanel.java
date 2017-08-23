@@ -3,11 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.ufmt.ic.alg3.videoJogos.view;
+package br.ufmt.ic.alg3.videoJogos.view.cadastro;
 
 import br.ufmt.ic.alg3.videoJogos.model.entidades.Jogo;
 import br.ufmt.ic.alg3.videoJogos.persistencia.JogoPersistencia;
 import br.ufmt.ic.alg3.videoJogos.persistencia.arquivo.JogoPersistenciaArquivo;
+import br.ufmt.ic.alg3.videoJogos.view.tableModel.JogoTableModel;
 import javax.swing.JOptionPane;
 
 /**

@@ -9,6 +9,7 @@ import br.ufmt.ic.alg3.videoJogos.model.entidades.Usuario;
 import br.ufmt.ic.alg3.videoJogos.persistencia.UsuarioPersistencia;
 import br.ufmt.ic.alg3.videoJogos.persistencia.lista.UsuarioPersistenciaLista;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -46,6 +47,8 @@ public class UsuarioPersistenciaArquivo
             oos = new ObjectOutputStream(fos);
             oos.writeObject(lista);
             oos.close();
+        }catch (FileNotFoundException arquivoNaoEncontrado){
+            gravar();
         }catch(Exception erro){
             erro.printStackTrace();
         }

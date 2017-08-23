@@ -9,6 +9,7 @@ import br.ufmt.ic.alg3.videoJogos.model.entidades.Jogo;
 import br.ufmt.ic.alg3.videoJogos.persistencia.JogoPersistencia;
 import br.ufmt.ic.alg3.videoJogos.persistencia.lista.JogoPersistenciaLista;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -34,9 +35,13 @@ public class JogoPersistenciaArquivo
             ois = new ObjectInputStream(fis);
             lista = (List) ois.readObject();
             ois.close();
+        } catch (FileNotFoundException arquivoNaoEncontrado){
+            gravar();
         } catch (Exception erro) {
+            
             erro.printStackTrace();
         }
+        
     }
     private void gravar(){
         try{

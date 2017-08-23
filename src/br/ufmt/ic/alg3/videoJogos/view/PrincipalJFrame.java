@@ -5,6 +5,9 @@
  */
 package br.ufmt.ic.alg3.videoJogos.view;
 
+import br.ufmt.ic.alg3.videoJogos.view.cadastro.UsuarioJPanel;
+import br.ufmt.ic.alg3.videoJogos.view.cadastro.JogoJPanel;
+
 /**
  *
  * @author Moacyr
@@ -54,7 +57,8 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         jMenuBar2.add(jMenu3);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(600, 450));
+        setMinimumSize(new java.awt.Dimension(800, 600));
+        setPreferredSize(new java.awt.Dimension(800, 600));
         getContentPane().setLayout(new javax.swing.OverlayLayout(getContentPane()));
 
         conteudojPanel.setLayout(new javax.swing.BoxLayout(conteudojPanel, javax.swing.BoxLayout.LINE_AXIS));

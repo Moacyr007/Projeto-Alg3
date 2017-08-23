@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.ufmt.ic.alg3.videoJogos.view;
+package br.ufmt.ic.alg3.videoJogos.view.tableModel;
 
 import br.ufmt.ic.alg3.videoJogos.model.entidades.Jogo;
 import java.util.List;
