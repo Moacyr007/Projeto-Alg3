@@ -50,14 +50,17 @@ public class UsuarioPersistenciaArquivo
             erro.printStackTrace();
         }
     }
+    @Override
     public void inserir(Usuario usuario) {
         super.inserir(usuario);
         gravar();
     }
+    @Override
     public void alterar(Usuario usuario) {
         super.alterar(usuario);
         gravar();
     }
+    @Override
     public void remover(Usuario usuario) {
         super.remover(usuario);
         gravar();
