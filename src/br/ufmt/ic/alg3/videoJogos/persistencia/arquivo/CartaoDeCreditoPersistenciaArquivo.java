@@ -24,6 +24,7 @@ public class CartaoDeCreditoPersistenciaArquivo
             ois = new ObjectInputStream(fis);
             lista = (List) ois.readObject();
             ois.close();
+            
         } catch (Exception erro) {
             erro.printStackTrace();
         }
