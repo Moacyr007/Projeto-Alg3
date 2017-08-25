@@ -54,7 +54,7 @@ public class PromocaoPersistenciaArquivo
     @Override
     public void remover(Promocao novoPromocao) {
         super.remover(novoPromocao);
-        gravar();
+        gravar(); //teste
     }
 }
 	
