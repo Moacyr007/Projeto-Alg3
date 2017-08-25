@@ -5,28 +5,25 @@
  */
 package br.ufmt.ic.alg3.videoJogos.persistencia;
 
-import br.ufmt.ic.alg3.videoJogos.model.entidades.Jogo;
+import br.ufmt.ic.alg3.videoJogos.model.entidades.Compra;
 import java.util.List;
 
 /**
  *
  * @author Moacyr
  */
-public interface JogoPersistencia {  
+public interface CompraPersistencia {
+     public void inserir(Compra compra);
     
-    public void inserir(Jogo jogo);
+    public void alterar(Compra compra);
     
-    public void alterar(Jogo jogo);
+    public void remover(Compra compra);
     
-    public void remover(Jogo jogo);
-    
-    public Jogo buscar(int id, String cpf, String nome);
+   // public Compra buscar(int id, String cpf, String nome); Arrumar isso aqui, usar IDCOmpra pra pesquisar?
     
     /**
      *
      * @return
      */
-    public List<Jogo> getAll();
+    public List<Compra> getAll();
 }
-
-

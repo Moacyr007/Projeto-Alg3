@@ -4,35 +4,34 @@ import br.ufmt.ic.alg3.videoJogos.model.entidades.Biblioteca;
 import br.ufmt.ic.alg3.videoJogos.persistencia.BibliotecaPersistencia;
 import java.util.ArrayList;
 import java.util.List;
+
 public class BibliotecaPersistenciaLista 
         implements BibliotecaPersistencia {
-    private List lista = new ArrayList();
+    public List lista = new ArrayList();
     
-    public void inserir(Biblioteca novoBiblioteca) {
+    public void inserir(Biblioteca biblioteca) {
     int ultimoId = 0;
         if (lista.size() > 0) {
             int posicaoUltimo = lista.size() - 1;
             Biblioteca ultimo = (Biblioteca) lista.get(posicaoUltimo);
             ultimoId = ultimo.getId();
         }   
-        novoBiblioteca.setId(ultimoId + 1);
-        lista.add(novoBiblioteca);
+        biblioteca.setId(ultimoId + 1);
+        lista.add(biblioteca);
     }
-    @Override
-    public void alterar(Biblioteca novoBiblioteca) {
+    public void alterar(Biblioteca biblioteca) {
         for (int i = 0; i < lista.size(); i++) {
             Biblioteca elem = (Biblioteca) lista.get(i);
-            if(novoBiblioteca.getId() == elem.getId()){
-                lista.set(i, novoBiblioteca);
+            if(biblioteca.getId() == elem.getId()){
+                lista.set(i, biblioteca);
             }
         }
     }
-    @Override
-    public void remover(Biblioteca novoBiblioteca) {
+    public void remover(Biblioteca biblioteca) {
           int posicao = 0;
         while (posicao < lista.size()) {
             Biblioteca elemento = (Biblioteca) lista.get(posicao);
-            if (elemento.getId() == novoBiblioteca.getId()) {
+            if (elemento.getId() == biblioteca.getId()) {
                 lista.remove(posicao);
                 break;
             }
@@ -40,19 +39,10 @@ public class BibliotecaPersistenciaLista
         }
     }
 
-    @Override
-    public Biblioteca buscar(int id) {
-         for (int i = 0; i < lista.size(); i++) {
-            Biblioteca elem = (Biblioteca) lista.get(i);
-            if(elem.getId() == id){
-                return elem;
-            }
-         }
-        return null;
-    }
+ 
     @Override
   public List<Biblioteca> getAll(){
       return lista;
   }
- 
+
 }

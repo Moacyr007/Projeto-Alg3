@@ -9,7 +9,7 @@ package br.ufmt.ic.alg3.videoJogos.model.entidades;
  *
  * @author Moacyr
  */
-public class CartaoDeCredito {
+public class CartaoDeCredito extends FormaDePagamento{
     private int numCartao;
     private int dataEx; 
     private int codigoDeSeguranca;

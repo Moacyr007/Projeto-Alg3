@@ -10,24 +10,23 @@ package br.ufmt.ic.alg3.videoJogos.model.entidades;
  * @author Moacyr
  */
 public class Promocao {
-    private int idPromocao;
+    
+    private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     private float desconto;
     private int idJogo;
 
     /**
      * @return the idPromocao
      */
-    public int getIdPromocao() {
-        return idPromocao;
-    }
-
-    /**
-     * @param idPromocao the idPromocao to set
-     */
-    public void setIdPromocao(int idPromocao) {
-        this.idPromocao = idPromocao;
-    }
-
+    
     /**
      * @return the desconto
      */

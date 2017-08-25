@@ -5,7 +5,7 @@
  */
 package br.ufmt.ic.alg3.videoJogos.persistencia;
 
-import br.ufmt.ic.alg3.videoJogos.model.entidades.Usuario;
+import br.ufmt.ic.alg3.videoJogos.model.entidades.DepositoEmConta;
 import java.util.List;
 
 /**
@@ -14,12 +14,13 @@ import java.util.List;
  */
 public interface DepositoEmContaPersistencia {
 
-    public void inserir(Usuario usuario);
+    public void inserir(DepositoEmConta depositoEmConta);
     
-    public void alterar(Usuario usuario);
+    public void alterar(DepositoEmConta depositoEmConta);
     
-    public void remover(Usuario usuario);
+    public void remover(DepositoEmConta depositoEmConta);
     
-    public List<Usuario> getAll();
+    public List<DepositoEmConta> getAll();
 }    
-}
+
+

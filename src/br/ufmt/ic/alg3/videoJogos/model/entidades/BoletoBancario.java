@@ -9,7 +9,7 @@ package br.ufmt.ic.alg3.videoJogos.model.entidades;
  *
  * @author Moacyr
  */
-public class BoletoBancario {
+public class BoletoBancario extends FormaDePagamento{
     
     private int numeroBoleto;
     private String banco;

@@ -1,12 +1,14 @@
 
-package PersistenciaLista;
-import Entidades.Compra;
-import Persistencia.persistenciaCompra;
+package br.ufmt.ic.alg3.videoJogos.persistencia.lista;
+import  br.ufmt.ic.alg3.videoJogos.model.entidades.Compra;
+import  br.ufmt.ic.alg3.videoJogos.persistencia.CompraPersistencia;
 import java.util.ArrayList;
 import java.util.List;
 public class CompraPersistenciaLista 
-        implements persistenciaCompra {
-    private List lista = new ArrayList();
+        implements CompraPersistencia {
+    
+    
+    protected List lista = new ArrayList();
     @Override
     public void inserir(Compra novoCompra) {
     int ultimoId = 0;
@@ -40,7 +42,7 @@ public class CompraPersistenciaLista
         }
     }
 
-    @Override
+    //Terminar de configuar a busca
     public Compra buscar(int id) {
          for (int i = 0; i < lista.size(); i++) {
             Compra elem = (Compra) lista.get(i);

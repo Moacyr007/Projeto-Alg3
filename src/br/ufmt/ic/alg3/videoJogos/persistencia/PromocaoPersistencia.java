@@ -5,10 +5,20 @@
  */
 package br.ufmt.ic.alg3.videoJogos.persistencia;
 
+import br.ufmt.ic.alg3.videoJogos.model.entidades.Promocao;
+import java.util.List;
+
 /**
  *
  * @author Moacyr
  */
 public interface PromocaoPersistencia {
     
+    public void inserir(Promocao promocao);
+    
+    public void alterar(Promocao promocao);
+    
+    public void remover(Promocao promocao);
+    
+    public List<Promocao> getAll();  
 }

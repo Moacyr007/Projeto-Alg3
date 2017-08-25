@@ -1,12 +1,15 @@
 
-package PersistenciaLista;
-import Entidades.ListaDeDesejos;
-import Persistencia.persistenciaListaDeDesejos;
+package br.ufmt.ic.alg3.videoJogos.persistencia.lista;
+import br.ufmt.ic.alg3.videoJogos.model.entidades.Jogo;
+import br.ufmt.ic.alg3.videoJogos.model.entidades.ListaDeDesejos;
+import br.ufmt.ic.alg3.videoJogos.persistencia.ListaDeDesejosPersistencia;
 import java.util.ArrayList;
 import java.util.List;
-public class ListaDeDesejosPersistenciaLista 
-        implements persistenciaListaDeDesejos {
-    private List lista = new ArrayList();
+
+public class ListaDeDesejosPersistenciaLista                                                                                                //esse código está um lixo, igual a minha vida
+        implements ListaDeDesejosPersistencia {
+    
+    protected List lista = new ArrayList();
     @Override
     public void inserir(ListaDeDesejos novoListaDeDesejos) {
     int ultimoId = 0;
@@ -40,7 +43,7 @@ public class ListaDeDesejosPersistenciaLista
         }
     }
 
-    @Override
+ //vou deixar o buscar aqui caso eu precise
     public ListaDeDesejos buscar(int id) {
          for (int i = 0; i < lista.size(); i++) {
             ListaDeDesejos elem = (ListaDeDesejos) lista.get(i);
@@ -54,5 +57,6 @@ public class ListaDeDesejosPersistenciaLista
   public List<ListaDeDesejos> getAll(){
       return lista;
   }
+
  
 }

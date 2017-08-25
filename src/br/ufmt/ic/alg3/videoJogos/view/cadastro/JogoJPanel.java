@@ -215,9 +215,7 @@ public class JogoJPanel extends javax.swing.JPanel {
         novo.setTipo(tipojTextField.getText());
         novo.setClassificacaoIndicativa(classIndcjTextField.getText());
         novo.setDesenvolvedor(desenvolvedorjTextField.getText());
-         //AQUI VAI FICAR A PARTE DE PERSISTIR NO BANCO DE DADOS
         
-      //  banco.remover(novo);
         banco.inserir(novo);
       
         JOptionPane.showMessageDialog( salvarjButton, "Casdastrado com Sucesso!");

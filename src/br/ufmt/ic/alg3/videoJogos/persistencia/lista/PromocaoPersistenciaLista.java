@@ -1,12 +1,14 @@
-
-package PersistenciaLista;
-import Entidades.Promocao;
-import Persistencia.persistenciaPromocao;
+package br.ufmt.ic.alg3.videoJogos.persistencia.lista;
+import br.ufmt.ic.alg3.videoJogos.model.entidades.Promocao;
+import br.ufmt.ic.alg3.videoJogos.persistencia.PromocaoPersistencia;
 import java.util.ArrayList;
 import java.util.List;
+
 public class PromocaoPersistenciaLista 
-        implements persistenciaPromocao {
-    private List lista = new ArrayList();
+        implements PromocaoPersistencia {
+    
+        protected List lista = new ArrayList();
+        
     @Override
     public void inserir(Promocao novoPromocao) {
     int ultimoId = 0;
@@ -40,7 +42,7 @@ public class PromocaoPersistenciaLista
         }
     }
 
-    @Override
+   //vou deixar aqui 
     public Promocao buscar(int id) {
          for (int i = 0; i < lista.size(); i++) {
             Promocao elem = (Promocao) lista.get(i);
