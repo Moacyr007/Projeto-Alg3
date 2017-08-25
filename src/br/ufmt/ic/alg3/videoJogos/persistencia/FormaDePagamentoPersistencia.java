@@ -5,10 +5,20 @@
  */
 package br.ufmt.ic.alg3.videoJogos.persistencia;
 
+import br.ufmt.ic.alg3.videoJogos.model.entidades.FormaDePagamento;
+import java.util.List;
+
 /**
  *
  * @author Moacyr
  */
 public interface FormaDePagamentoPersistencia {
     
+    public void inserir(FormaDePagamento formaDePagamento);
+    
+    public void alterar(FormaDePagamento formaDePagamento);
+    
+    public void remover(FormaDePagamento formaDePagamento);
+    
+    public List<FormaDePagamento> getAll();   
 }

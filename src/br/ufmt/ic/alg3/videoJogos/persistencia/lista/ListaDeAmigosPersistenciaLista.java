@@ -1,13 +1,16 @@
 
-package PersistenciaLista;
-import Entidades.ListaDeAmigos;
-import Persistencia.persistenciaListaDeAmigos;
+package br.ufmt.ic.alg3.videoJogos.persistencia.lista;
+import br.ufmt.ic.alg3.videoJogos.model.entidades.ListaDeAmigos;
+import br.ufmt.ic.alg3.videoJogos.persistencia.ListaDeAmigosPersistencia;
 import java.util.ArrayList;
 import java.util.List;
+
 public class ListaDeAmigosPersistenciaLista 
-        implements persistenciaListaDeAmigos {
-    private List lista = new ArrayList();
-    @Override
+        implements ListaDeAmigosPersistencia {
+    
+    protected List lista = new ArrayList();
+
+    
     public void inserir(ListaDeAmigos novoListaDeAmigos) {
     int ultimoId = 0;
         if (lista.size() > 0) {
@@ -40,7 +43,6 @@ public class ListaDeAmigosPersistenciaLista
         }
     }
 
-    @Override
     public ListaDeAmigos buscar(int id) {
          for (int i = 0; i < lista.size(); i++) {
             ListaDeAmigos elem = (ListaDeAmigos) lista.get(i);
@@ -54,5 +56,10 @@ public class ListaDeAmigosPersistenciaLista
   public List<ListaDeAmigos> getAll(){
       return lista;
   }
+
+    @Override
+    public ListaDeAmigos buscar(int id, String cpf, String nome) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
  
 }

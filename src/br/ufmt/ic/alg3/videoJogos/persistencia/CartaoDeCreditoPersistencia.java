@@ -5,7 +5,7 @@
  */
 package br.ufmt.ic.alg3.videoJogos.persistencia;
 
-import br.ufmt.ic.alg3.videoJogos.model.entidades.Usuario;
+import br.ufmt.ic.alg3.videoJogos.model.entidades.CartaoDeCredito;
 import java.util.List;
 
 /**
@@ -14,12 +14,12 @@ import java.util.List;
  */
 public interface CartaoDeCreditoPersistencia {
     
-    public void inserir(Usuario usuario);
+    public void inserir(CartaoDeCredito cartaoDeCredito);
     
-    public void alterar(Usuario usuario);
+    public void alterar(CartaoDeCredito cartaoDeCredito);
     
-    public void remover(Usuario usuario);
+    public void remover(CartaoDeCredito cartaoDeCredito);
     
-    public List<Usuario> getAll();
+    public List<CartaoDeCredito> getAll();
 }   
-}
+

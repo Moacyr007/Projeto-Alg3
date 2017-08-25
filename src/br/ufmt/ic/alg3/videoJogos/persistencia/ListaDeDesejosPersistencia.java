@@ -5,10 +5,20 @@
  */
 package br.ufmt.ic.alg3.videoJogos.persistencia;
 
+import br.ufmt.ic.alg3.videoJogos.model.entidades.ListaDeDesejos;
+import java.util.List;
+
 /**
  *
  * @author Moacyr
  */
 public interface ListaDeDesejosPersistencia {
+
+    public void inserir(ListaDeDesejos listaDeDesejos);
     
+    public void alterar(ListaDeDesejos listaDeDesejos);
+    
+    public void remover(ListaDeDesejos listaDeDesejos);
+    
+    public List<ListaDeDesejos> getAll();      
 }

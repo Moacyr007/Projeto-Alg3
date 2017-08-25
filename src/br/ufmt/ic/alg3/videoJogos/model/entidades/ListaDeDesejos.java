@@ -5,23 +5,37 @@
  */
 package br.ufmt.ic.alg3.videoJogos.model.entidades;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Moacyr
  */
 public class ListaDeDesejos {
+    private int id;
     private int idUsuario;
+    private ArrayList jogos; //a ideia é cirar uma lista de jogos que o usuário deseja
 
-    /**
-     * @return the idUsuario
-     */
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public ArrayList getJogos() {
+        return jogos;
+    }
+
+    public void setJogos(ArrayList jogos) {
+        this.jogos = jogos;
+    }
+
     public int getIdUsuario() {
         return idUsuario;
     }
 
-    /**
-     * @param idUsuario the idUsuario to set
-     */
     public void setIdUsuario(int idUsuario) {
         this.idUsuario = idUsuario;
     }

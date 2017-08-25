@@ -5,7 +5,7 @@
  */
 package br.ufmt.ic.alg3.videoJogos.persistencia;
 
-import br.ufmt.ic.alg3.videoJogos.model.entidades.Usuario;
+import br.ufmt.ic.alg3.videoJogos.model.entidades.Destaques;
 import java.util.List;
 
 /**
@@ -14,12 +14,11 @@ import java.util.List;
  */
 public interface DestaquesPersistencia {
 
-    public void inserir(Usuario usuario);
+    public void inserir(Destaques destaques);
     
-    public void alterar(Usuario usuario);
+    public void alterar(Destaques destaques);
     
-    public void remover(Usuario usuario);
+    public void remover(Destaques destaques);
     
-    public List<Usuario> getAll();
+    public List<Destaques> getAll();
 }    
-}

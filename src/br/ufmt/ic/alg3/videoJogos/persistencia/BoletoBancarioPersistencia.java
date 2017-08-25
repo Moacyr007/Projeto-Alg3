@@ -5,7 +5,7 @@
  */
 package br.ufmt.ic.alg3.videoJogos.persistencia;
 
-import br.ufmt.ic.alg3.videoJogos.model.entidades.Usuario;
+import br.ufmt.ic.alg3.videoJogos.model.entidades.BoletoBancario;
 import java.util.List;
 
 /**
@@ -14,12 +14,12 @@ import java.util.List;
  */
 public interface BoletoBancarioPersistencia {
     
-    public void inserir(Usuario usuario);
+    public void inserir(BoletoBancario boletoBancario);
     
-    public void alterar(Usuario usuario);
+    public void alterar(BoletoBancario boletoBancario);
     
-    public void remover(Usuario usuario);
+    public void remover(BoletoBancario boletoBancario);
     
-    public List<Usuario> getAll();
+    public List<BoletoBancario> getAll();
 }
-}
+

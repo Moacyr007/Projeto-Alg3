@@ -1,12 +1,15 @@
 
-package PersistenciaLista;
-import Entidades.FormaDePagamento;
-import Persistencia.persistenciaFormaDePagamento;
+package br.ufmt.ic.alg3.videoJogos.persistencia.lista;
+import br.ufmt.ic.alg3.videoJogos.model.entidades.FormaDePagamento;
+import br.ufmt.ic.alg3.videoJogos.persistencia.FormaDePagamentoPersistencia;
 import java.util.ArrayList;
 import java.util.List;
+
 public class FormaDePagamentoPersistenciaLista 
-        implements persistenciaFormaDePagamento {
-    private List lista = new ArrayList();
+        implements FormaDePagamentoPersistencia {
+    
+    protected List lista = new ArrayList();
+    
     @Override
     public void inserir(FormaDePagamento novoFormaDePagamento) {
     int ultimoId = 0;
@@ -40,7 +43,6 @@ public class FormaDePagamentoPersistenciaLista
         }
     }
 
-    @Override
     public FormaDePagamento buscar(int id) {
          for (int i = 0; i < lista.size(); i++) {
             FormaDePagamento elem = (FormaDePagamento) lista.get(i);

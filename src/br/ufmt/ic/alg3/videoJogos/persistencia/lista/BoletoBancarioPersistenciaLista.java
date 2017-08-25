@@ -1,29 +1,30 @@
 
 package br.ufmt.ic.alg3.videoJogos.persistencia.lista;
-import Entidades.BoletoBancario;
-import Persistencia.persistenciaBoletoBancario;
+import br.ufmt.ic.alg3.videoJogos.model.entidades.BoletoBancario;
 import br.ufmt.ic.alg3.videoJogos.persistencia.BoletoBancarioPersistencia;
 import java.util.ArrayList;
 import java.util.List;
 public class BoletoBancarioPersistenciaLista 
         implements BoletoBancarioPersistencia {
-    private List lista = new ArrayList();
+        
+    protected List lista = new ArrayList();
+    
     @Override
     public void inserir(BoletoBancario novoBoletoBancario) {
-    int ultimoId = 0;
+    int ultimonumeroBoleto = 0;
         if (lista.size() > 0) {
             int posicaoUltimo = lista.size() - 1;
             BoletoBancario ultimo = (BoletoBancario) lista.get(posicaoUltimo);
-            ultimoId = ultimo.getId();
+            ultimonumeroBoleto = ultimo.getNumeroBoleto();
         }   
-        novoBoletoBancario.setId(ultimoId + 1);
+        novoBoletoBancario.setNumeroBoleto(ultimonumeroBoleto + 1);
         lista.add(novoBoletoBancario);
     }
     @Override
     public void alterar(BoletoBancario novoBoletoBancario) {
         for (int i = 0; i < lista.size(); i++) {
             BoletoBancario elem = (BoletoBancario) lista.get(i);
-            if(novoBoletoBancario.getId() == elem.getId()){
+            if(novoBoletoBancario.getNumeroBoleto() == elem.getNumeroBoleto()){
                 lista.set(i, novoBoletoBancario);
             }
         }
@@ -33,7 +34,7 @@ public class BoletoBancarioPersistenciaLista
           int posicao = 0;
         while (posicao < lista.size()) {
             BoletoBancario elemento = (BoletoBancario) lista.get(posicao);
-            if (elemento.getId() == novoBoletoBancario.getId()) {
+            if (elemento.getNumeroBoleto() == novoBoletoBancario.getNumeroBoleto()) {
                 lista.remove(posicao);
                 break;
             }
@@ -41,11 +42,10 @@ public class BoletoBancarioPersistenciaLista
         }
     }
 
-    @Override
     public BoletoBancario buscar(int id) {
          for (int i = 0; i < lista.size(); i++) {
             BoletoBancario elem = (BoletoBancario) lista.get(i);
-            if(elem.getId() == id){
+            if(elem.getNumeroBoleto() == id){
                 return elem;
             }
          }

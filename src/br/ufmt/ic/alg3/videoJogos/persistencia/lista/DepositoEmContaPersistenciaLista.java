@@ -1,12 +1,14 @@
 
-package PersistenciaLista;
-import Entidades.DepositoEmConta;
-import Persistencia.persistenciaDepositoEmConta;
+package br.ufmt.ic.alg3.videoJogos.persistencia.lista;
+import br.ufmt.ic.alg3.videoJogos.model.entidades.DepositoEmConta;
+import br.ufmt.ic.alg3.videoJogos.persistencia.DepositoEmContaPersistencia;
 import java.util.ArrayList;
 import java.util.List;
+
 public class DepositoEmContaPersistenciaLista 
-        implements persistenciaDepositoEmConta {
-    private List lista = new ArrayList();
+        implements DepositoEmContaPersistencia{
+    
+    protected List lista = new ArrayList();
     @Override
     public void inserir(DepositoEmConta novoDepositoEmConta) {
     int ultimoId = 0;
@@ -40,7 +42,7 @@ public class DepositoEmContaPersistenciaLista
         }
     }
 
-    @Override
+   
     public DepositoEmConta buscar(int id) {
          for (int i = 0; i < lista.size(); i++) {
             DepositoEmConta elem = (DepositoEmConta) lista.get(i);

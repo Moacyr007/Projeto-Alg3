@@ -5,10 +5,20 @@
  */
 package br.ufmt.ic.alg3.videoJogos.persistencia;
 
+import br.ufmt.ic.alg3.videoJogos.model.entidades.Jogo;
+import java.util.List;
+
 /**
  *
  * @author Moacyr
  */
 public interface JogosPorGeneroPersistencia {
+
+    public void inserir(Jogo jogo);
     
+    public void alterar(Jogo jogo);
+    
+    public void remover(Jogo jogo);
+    
+    public List<Jogo> getAll();      
 }

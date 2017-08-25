@@ -5,7 +5,7 @@
  */
 package br.ufmt.ic.alg3.videoJogos.persistencia;
 
-import br.ufmt.ic.alg3.videoJogos.model.entidades.Usuario;
+import br.ufmt.ic.alg3.videoJogos.model.entidades.Biblioteca;
 import java.util.List;
 
 /**
@@ -14,11 +14,11 @@ import java.util.List;
  */
 public interface BibliotecaPersistencia {
     
-    public void inserir(Usuario usuario);
+    public void inserir(Biblioteca biblioteca);
     
-    public void alterar(Usuario usuario);
+    public void alterar(Biblioteca biblioteca);
     
-    public void remover(Usuario usuario);
+    public void remover(Biblioteca biblioteca);
     
-    public List<Usuario> getAll();
+    public List<Biblioteca> getAll();
 }

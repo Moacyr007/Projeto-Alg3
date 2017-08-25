@@ -9,12 +9,30 @@ package br.ufmt.ic.alg3.videoJogos.model.entidades;
  *
  * @author Moacyr
  */
-public class DepositoEmConta {
+public class DepositoEmConta extends FormaDePagamento{
     
+    private int id;//id da transação 
     private int numContaOrigem;
     private int numAgenciaOrigem;
     private int numContaDestino;
     private int numAgenciaDestino;
+    private float valor;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public float getValor() {
+        return valor;
+    }
+
+    public void setValor(float valor) {
+        this.valor = valor;
+    }
 
     /**
      * @return the numContaOrigem

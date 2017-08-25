@@ -11,21 +11,52 @@ package br.ufmt.ic.alg3.videoJogos.model.entidades;
  */
 public class Compra {
     
-    private int idJogo;
-
-    /**
-     * @return the idJogo
-     */
-    public int getIdJogo() {
-        return idJogo;
-    }
-
-    /**
-     * @param idJogo the idJogo to set
-     */
-    public void setIdJogo(int idJogo) {
-        this.idJogo = idJogo;
-    }
+    private Jogo jogo;
+    private Usuario usuario;
+    private float valor;
+    private FormaDePagamento formaDePagamento;
     
+    private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Jogo getJogo() {
+        return jogo;
+    }
+
+    public void setJogo(Jogo jogo) {
+        this.jogo = jogo;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    public float getValor() {
+        return valor;
+    }
+
+    public void setValor(float valor) {
+        this.valor = valor;
+    }
+
+    public FormaDePagamento getFormaDePagamento() {
+        return formaDePagamento;
+    }
+
+    public void setFormaDePagamento(FormaDePagamento formaDePagamento) {
+        this.formaDePagamento = formaDePagamento;
+    }
+   
     
 }
