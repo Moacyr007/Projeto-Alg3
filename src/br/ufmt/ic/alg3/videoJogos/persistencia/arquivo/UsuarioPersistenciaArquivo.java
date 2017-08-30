@@ -19,14 +19,16 @@ import java.util.List;
  *
  * @author Moacyr
  */
-public class UsuarioPersistenciaArquivo 
-            extends UsuarioPersistenciaLista 
-            implements UsuarioPersistencia{
-    
+public class UsuarioPersistenciaArquivo
+        extends UsuarioPersistenciaLista
+        implements UsuarioPersistencia {
+
     private final String arq = "usuario.db";
-    public UsuarioPersistenciaArquivo(){
+
+    public UsuarioPersistenciaArquivo() {
         ler();
     }
+
     private void ler() {
         try {
             ObjectInputStream ois;
@@ -35,34 +37,41 @@ public class UsuarioPersistenciaArquivo
             ois = new ObjectInputStream(fis);
             lista = (List) ois.readObject();
             ois.close();
+        } catch (FileNotFoundException arquivoNaoEncontrado) {
+            gravar();
+
         } catch (Exception erro) {
             erro.printStackTrace();
         }
     }
-    private void gravar(){
-        try{
+
+    private void gravar() {
+        try {
             ObjectOutputStream oos;
             FileOutputStream fos;
             fos = new FileOutputStream(arq);
             oos = new ObjectOutputStream(fos);
             oos.writeObject(lista);
             oos.close();
-        }catch (FileNotFoundException arquivoNaoEncontrado){
+        } catch (FileNotFoundException arquivoNaoEncontrado) {
             gravar();
-        }catch(Exception erro){
+        } catch (Exception erro) {
             erro.printStackTrace();
         }
     }
+
     @Override
     public void inserir(Usuario usuario) {
         super.inserir(usuario);
         gravar();
     }
+
     @Override
     public void alterar(Usuario usuario) {
         super.alterar(usuario);
         gravar();
     }
+
     @Override
     public void remover(Usuario usuario) {
         super.remover(usuario);

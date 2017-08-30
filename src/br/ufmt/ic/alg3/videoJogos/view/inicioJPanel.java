@@ -7,11 +7,8 @@ package br.ufmt.ic.alg3.videoJogos.view;
 
 import br.ufmt.ic.alg3.videoJogos.model.entidades.CartaoDeCredito;
 import br.ufmt.ic.alg3.videoJogos.persistencia.CartaoDeCreditoPersistencia;
-import br.ufmt.ic.alg3.videoJogos.persistencia.JogoPersistencia;
 import br.ufmt.ic.alg3.videoJogos.persistencia.arquivo.CartaoDeCreditoPersistenciaArquivo;
-import br.ufmt.ic.alg3.videoJogos.persistencia.arquivo.JogoPersistenciaArquivo;
 import javax.swing.JOptionPane;
-
 
 /**
  *
@@ -19,9 +16,8 @@ import javax.swing.JOptionPane;
  */
 public class inicioJPanel extends javax.swing.JPanel {
 
-    
-    private static CartaoDeCreditoPersistencia
-            banco = new CartaoDeCreditoPersistenciaArquivo();
+    private static CartaoDeCreditoPersistencia banco = new CartaoDeCreditoPersistenciaArquivo();
+
     /**
      * Creates new form inicioJPanel
      */
@@ -103,6 +99,11 @@ public class inicioJPanel extends javax.swing.JPanel {
         });
 
         jButton2.setText("Encontrar Amigos");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufmt/ic/alg3/videoJogos/view/imagemTelaPrincipal.jpg"))); // NOI18N
 
@@ -201,23 +202,31 @@ public class inicioJPanel extends javax.swing.JPanel {
     private void thThanksjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_thThanksjButtonActionPerformed
         // TODO add your handling code here:
         CartaoDeCredito novo = new CartaoDeCredito();
-        
+
         novo.setCodigoDeSeguranca((new Integer(securityCodejPasswordField.getText())));
         novo.setDataEx((new Integer(expiryDatejTextField.getText())));
         novo.setNumCartao((new Integer(cardtNumberjTextField.getText())));
         //cliente.setIdade(new Integer(txtIdade.getText()).intValue());
-        
-       cardtNumberjTextField.setText("");
-       expiryDatejTextField.setText("");
-       securityCodejPasswordField.setText("");
-       
-       banco.inserir(novo);
-       JOptionPane.showMessageDialog(thThanksjButton, "Onee-chan! (◕‿◕✿)");   
+
+        cardtNumberjTextField.setText("");
+        expiryDatejTextField.setText("");
+        securityCodejPasswordField.setText("");
+
+        banco.inserir(novo);
+        JOptionPane.showMessageDialog(thThanksjButton, "Onee-chan! (◕‿◕✿)");
     }//GEN-LAST:event_thThanksjButtonActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        this.removeAll();
+        this.add(new ProcurarAmigos());
+        this.setVisible(false);
+        this.setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -5,6 +5,8 @@
  */
 package br.ufmt.ic.alg3.videoJogos.model.entidades;
 
+import java.io.Serializable;
+
 
 
 
@@ -13,7 +15,7 @@ package br.ufmt.ic.alg3.videoJogos.model.entidades;
  *
  * @author Moacyr
  */
-public class Usuario {
+public class Usuario implements Serializable{
     
     private int id;
     private String nome;

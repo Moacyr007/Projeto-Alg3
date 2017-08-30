@@ -1,6 +1,8 @@
 
 package br.ufmt.ic.alg3.videoJogos.view;
 
+import br.ufmt.ic.alg3.videoJogos.persistencia.UsuarioPersistencia;
+import br.ufmt.ic.alg3.videoJogos.persistencia.arquivo.UsuarioPersistenciaArquivo;
 import br.ufmt.ic.alg3.videoJogos.view.tableModel.UsuarioTableModel;
 
 /**
@@ -9,6 +11,7 @@ import br.ufmt.ic.alg3.videoJogos.view.tableModel.UsuarioTableModel;
  */
 public class ProcurarAmigos extends javax.swing.JPanel {
 
+    UsuarioPersistencia banco = new UsuarioPersistenciaArquivo();
     /**
      * Creates new form ProcurarAmigos
      */
@@ -33,7 +36,7 @@ public class ProcurarAmigos extends javax.swing.JPanel {
         setMinimumSize(new java.awt.Dimension(600, 450));
         setRequestFocusEnabled(false);
 
-        tabelaProcurarAmigosjTable.setModel(new JogoTableModel(banco.getAll()));
+        tabelaProcurarAmigosjTable.setModel(new UsuarioTableModel(banco.getAll()));
         jScrollPane1.setViewportView(tabelaProcurarAmigosjTable);
 
         conteudoProcurarAmigosjLabel.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N

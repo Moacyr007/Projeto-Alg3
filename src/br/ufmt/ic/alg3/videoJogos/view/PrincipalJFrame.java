@@ -5,8 +5,8 @@
  */
 package br.ufmt.ic.alg3.videoJogos.view;
 
-import br.ufmt.ic.alg3.videoJogos.view.cadastro.UsuarioJPanel;
 import br.ufmt.ic.alg3.videoJogos.view.cadastro.JogoJPanel;
+import br.ufmt.ic.alg3.videoJogos.view.cadastro.UsuarioJPanel;
 
 /**
  *
