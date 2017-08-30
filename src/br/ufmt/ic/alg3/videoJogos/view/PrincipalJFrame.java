@@ -59,10 +59,8 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 600));
         setPreferredSize(new java.awt.Dimension(800, 600));
-        getContentPane().setLayout(new javax.swing.OverlayLayout(getContentPane()));
 
         conteudojPanel.setLayout(new javax.swing.BoxLayout(conteudojPanel, javax.swing.BoxLayout.LINE_AXIS));
-        getContentPane().add(conteudojPanel);
 
         jMenuBar1.setForeground(new java.awt.Color(0, 0, 100));
 
@@ -121,6 +119,17 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         jMenuBar1.add(jMenu4);
 
         setJMenuBar(jMenuBar1);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(conteudojPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(conteudojPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

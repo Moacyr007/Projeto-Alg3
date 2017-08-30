@@ -15,15 +15,6 @@ public class CartaoDeCredito extends FormaDePagamento implements Serializable{
     private int numCartao;
     private int dataEx; 
     private int codigoDeSeguranca;
-    private int idUsuario;
-
-    public int getIdUsuario() {
-        return idUsuario;
-    }
-
-    public void setIdUsuario(int idUsuario) {
-        this.idUsuario = idUsuario;
-    }
 
     public int getDataEx() {
         return dataEx;
