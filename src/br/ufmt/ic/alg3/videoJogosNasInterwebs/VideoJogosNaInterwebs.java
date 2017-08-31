@@ -19,10 +19,10 @@ public class VideoJogosNaInterwebs {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-     //   PrincipalJFrame tela = new PrincipalJFrame();
-      //  tela.setVisible(true);
+        PrincipalJFrame tela = new PrincipalJFrame();
+        tela.setVisible(true);
     
-        UsuarioPersistenciaMySQL my = new UsuarioPersistenciaMySQL();
+        /*UsuarioPersistenciaMySQL my = new UsuarioPersistenciaMySQL();
         Usuario usuario = new Usuario();
         usuario.setNome("Moacyr");
         usuario.setEmail("moacyr.moacyr11@gmail.com");
@@ -30,7 +30,7 @@ public class VideoJogosNaInterwebs {
         usuario.setSenha("123456");
         
         my.inserir(usuario);
-        
+        */
     
     }
     

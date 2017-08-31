@@ -27,6 +27,7 @@ public class ProcurarAmigos extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         jScrollPane1 = new javax.swing.JScrollPane();
         tabelaProcurarAmigosjTable = new javax.swing.JTable();
@@ -35,44 +36,47 @@ public class ProcurarAmigos extends javax.swing.JPanel {
 
         setMinimumSize(new java.awt.Dimension(600, 450));
         setRequestFocusEnabled(false);
+        setLayout(new java.awt.GridBagLayout());
 
         tabelaProcurarAmigosjTable.setModel(new UsuarioTableModel(banco.getAll()));
         jScrollPane1.setViewportView(tabelaProcurarAmigosjTable);
 
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 433;
+        gridBagConstraints.ipady = 310;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(12, 44, 34, 103);
+        add(jScrollPane1, gridBagConstraints);
+
         conteudoProcurarAmigosjLabel.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
         conteudoProcurarAmigosjLabel.setForeground(new java.awt.Color(0, 0, 200));
         conteudoProcurarAmigosjLabel.setText("Procurar amigos");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(11, 24, 0, 0);
+        add(conteudoProcurarAmigosjLabel, gridBagConstraints);
 
         conteudoProcurarAmigos2jLabel.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
         conteudoProcurarAmigos2jLabel.setForeground(new java.awt.Color(200, 0, 0));
         conteudoProcurarAmigos2jLabel.setText("Encontre amigos para socializar e se divertir!");
         conteudoProcurarAmigos2jLabel.setAlignmentX(0.5F);
         conteudoProcurarAmigos2jLabel.setBorder(new javax.swing.border.MatteBorder(null));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(conteudoProcurarAmigosjLabel))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(conteudoProcurarAmigos2jLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(60, 60, 60)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(11, 11, 11)
-                .addComponent(conteudoProcurarAmigosjLabel)
-                .addGap(11, 11, 11)
-                .addComponent(conteudoProcurarAmigos2jLabel)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.ipadx = 20;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(11, 24, 0, 0);
+        add(conteudoProcurarAmigos2jLabel, gridBagConstraints);
     }// </editor-fold>//GEN-END:initComponents
 
 
