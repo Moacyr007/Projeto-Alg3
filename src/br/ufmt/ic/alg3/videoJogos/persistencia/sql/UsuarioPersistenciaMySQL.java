@@ -22,7 +22,11 @@ public class UsuarioPersistenciaMySQL implements UsuarioPersistencia{
 
     @Override
     public void inserir(Usuario usuario) {
+<<<<<<< HEAD
         /*try {
+=======
+        try {
+>>>>>>> master
             Connection connecton = DriverManager.getConnection("jdbc:mysql://localhost:3306/funeraria", "root","123");
             
             
@@ -30,7 +34,11 @@ public class UsuarioPersistenciaMySQL implements UsuarioPersistencia{
             
             //                                              + "'"
             
+<<<<<<< HEAD
             /*String sql = "insert into responsavel";
+=======
+            String sql = "insert into responsavel";
+>>>>>>> master
             System.out.println(sql);
             Statement st = con.createStatement();
             st.execute(sql);
@@ -38,7 +46,11 @@ public class UsuarioPersistenciaMySQL implements UsuarioPersistencia{
             
         } catch (SQLException ex) {
             Logger.getLogger(UsuarioPersistenciaMySQL.class.getName()).log(Level.SEVERE, null, ex);
+<<<<<<< HEAD
         }*/
+=======
+        }
+>>>>>>> master
     }
 
     @Override
@@ -62,4 +74,8 @@ public class UsuarioPersistenciaMySQL implements UsuarioPersistencia{
     }
     
     
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> master
