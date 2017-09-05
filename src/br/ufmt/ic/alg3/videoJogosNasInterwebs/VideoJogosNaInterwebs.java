@@ -20,5 +20,6 @@ public class VideoJogosNaInterwebs {
 
         PrincipalJFrame tela = new PrincipalJFrame();
         tela.setVisible(true);
-    }
+   }
+}
   

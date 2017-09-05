@@ -68,17 +68,18 @@ public class inicioJPanel extends javax.swing.JPanel {
         gridBagConstraints.gridy = 8;
         gridBagConstraints.gridwidth = 5;
         gridBagConstraints.gridheight = 2;
-        gridBagConstraints.ipadx = 143;
+        gridBagConstraints.ipadx = 132;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(12, 6, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(10, 6, 0, 0);
         add(expiryDatejTextField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 10;
         gridBagConstraints.gridwidth = 5;
-        gridBagConstraints.ipadx = 143;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.ipadx = 132;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 6, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(10, 6, 0, 0);
         add(securityCodejPasswordField, gridBagConstraints);
 
         thThanksjButton.setText("Th-thanks");
@@ -89,10 +90,10 @@ public class inicioJPanel extends javax.swing.JPanel {
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 11;
-        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.gridy = 12;
+        gridBagConstraints.gridwidth = 4;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 62, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(10, 56, 0, 0);
         add(thThanksjButton, gridBagConstraints);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Black", 0, 48)); // NOI18N
@@ -101,10 +102,9 @@ public class inicioJPanel extends javax.swing.JPanel {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.gridwidth = 7;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(67, 12, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(40, 60, 0, 0);
         add(jLabel1, gridBagConstraints);
 
         conteudoPrincipaljLabel.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
@@ -114,11 +114,10 @@ public class inicioJPanel extends javax.swing.JPanel {
         conteudoPrincipaljLabel.setBorder(new javax.swing.border.MatteBorder(null));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.gridwidth = 7;
-        gridBagConstraints.ipadx = 60;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 11;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(35, 135, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(4, 120, 0, 0);
         add(conteudoPrincipaljLabel, gridBagConstraints);
 
         cardtNumberjTextField.addActionListener(new java.awt.event.ActionListener() {
@@ -131,41 +130,41 @@ public class inicioJPanel extends javax.swing.JPanel {
         gridBagConstraints.gridy = 6;
         gridBagConstraints.gridwidth = 5;
         gridBagConstraints.gridheight = 2;
-        gridBagConstraints.ipadx = 143;
+        gridBagConstraints.ipadx = 132;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(18, 6, 0, 0);
         add(cardtNumberjTextField, gridBagConstraints);
 
         textoKizunaKawaiijLabel.setText("H-hi there...");
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
         gridBagConstraints.gridwidth = 3;
-        gridBagConstraints.ipadx = -1;
+        gridBagConstraints.ipadx = 32;
         gridBagConstraints.ipady = 9;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(195, 156, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(134, 6, 0, 0);
         add(textoKizunaKawaiijLabel, gridBagConstraints);
 
         textoKizunaKawaii2jLabel.setText("Do you th-think i could have your");
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
-        gridBagConstraints.gridwidth = 4;
-        gridBagConstraints.ipadx = 10;
+        gridBagConstraints.gridwidth = 8;
+        gridBagConstraints.ipadx = 21;
         gridBagConstraints.ipady = -2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 73, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(6, 6, 0, 0);
         add(textoKizunaKawaii2jLabel, gridBagConstraints);
 
         textoKizunaKawaii3jLabel.setText("credit card information, p-please?");
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
-        gridBagConstraints.gridwidth = 6;
-        gridBagConstraints.ipadx = 19;
+        gridBagConstraints.gridwidth = 14;
+        gridBagConstraints.ipadx = 39;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 73, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(6, 6, 0, 0);
         add(textoKizunaKawaii3jLabel, gridBagConstraints);
 
         cardNumberjLabel.setText("Card number:");
@@ -173,7 +172,7 @@ public class inicioJPanel extends javax.swing.JPanel {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 6;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(22, 73, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(21, 58, 0, 0);
         add(cardNumberjLabel, gridBagConstraints);
 
         expiryDatejLabel.setText("Expiry date:");
@@ -181,16 +180,15 @@ public class inicioJPanel extends javax.swing.JPanel {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 8;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(16, 85, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(13, 65, 0, 0);
         add(expiryDatejLabel, gridBagConstraints);
 
         securiryCodejLabel.setText("Security code:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 10;
-        gridBagConstraints.ipady = 6;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 68, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(13, 55, 0, 0);
         add(securiryCodejLabel, gridBagConstraints);
 
         jButton1.setText("Loja");
@@ -200,13 +198,13 @@ public class inicioJPanel extends javax.swing.JPanel {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 6;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 8;
-        gridBagConstraints.ipadx = 108;
-        gridBagConstraints.ipady = 34;
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.ipadx = 115;
+        gridBagConstraints.ipady = 16;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(58, 86, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(35, 38, 0, 0);
         add(jButton1, gridBagConstraints);
 
         jButton2.setText("Encontrar Amigos");
@@ -216,27 +214,27 @@ public class inicioJPanel extends javax.swing.JPanel {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 14;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 10;
-        gridBagConstraints.ipadx = 14;
-        gridBagConstraints.ipady = 34;
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 15;
+        gridBagConstraints.ipadx = 22;
+        gridBagConstraints.ipady = 16;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(58, 18, 0, 28);
+        gridBagConstraints.insets = new java.awt.Insets(35, 10, 0, 0);
         add(jButton2, gridBagConstraints);
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/ufmt/ic/alg3/videoJogos/view/sunohara mei.resized.png"))); // NOI18N
         jLabel8.setMaximumSize(new java.awt.Dimension(300, 240));
         jLabel8.setMinimumSize(new java.awt.Dimension(300, 240));
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridx = 18;
         gridBagConstraints.gridy = 3;
-        gridBagConstraints.gridwidth = 9;
-        gridBagConstraints.gridheight = 10;
+        gridBagConstraints.gridwidth = 16;
+        gridBagConstraints.gridheight = 11;
         gridBagConstraints.ipadx = 47;
         gridBagConstraints.ipady = 280;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(82, 28, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(2, 18, 0, 105);
         add(jLabel8, gridBagConstraints);
         jLabel8.getAccessibleContext().setAccessibleDescription("");
     }// </editor-fold>//GEN-END:initComponents
@@ -263,12 +261,17 @@ public class inicioJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_thThanksjButtonActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        
+        
+        this.removeAll();
+        this.add(new LojaJPanel());
+        this.setVisible(false);
+        this.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         this.removeAll();
-        this.add(new ProcurarAmigos());
+        this.add(new ProcurarAmigosJPanel());
         this.setVisible(false);
         this.setVisible(true);
         // TODO add your handling code here:

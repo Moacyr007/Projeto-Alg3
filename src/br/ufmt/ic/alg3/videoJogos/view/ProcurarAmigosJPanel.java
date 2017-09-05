@@ -9,13 +9,13 @@ import br.ufmt.ic.alg3.videoJogos.view.tableModel.UsuarioTableModel;
  *
  * @author Moacyr
  */
-public class ProcurarAmigos extends javax.swing.JPanel {
+public class ProcurarAmigosJPanel extends javax.swing.JPanel {
 
     UsuarioPersistencia banco = new UsuarioPersistenciaArquivo();
     /**
      * Creates new form ProcurarAmigos
      */
-    public ProcurarAmigos() {
+    public ProcurarAmigosJPanel() {
         initComponents();
     }
 
