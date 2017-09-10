@@ -12,6 +12,7 @@ import java.io.Serializable;
  * @author Moacyr
  */
 public class CartaoDeCredito extends FormaDePagamento implements Serializable{
+    
     private int numCartao;
     private int dataEx; 
     private int codigoDeSeguranca;

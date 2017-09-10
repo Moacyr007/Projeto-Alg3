@@ -11,12 +11,21 @@ package br.ufmt.ic.alg3.videoJogos.model.entidades;
  */
 public class FormaDePagamento {
     
+    private Usuario usuario;
     private int id;
     private float valor;
     private CartaoDeCredito cartaoDeCredito;
     private DepositoEmConta depositoEmConta;
     private BoletoBancario boletoBancario;
-    
+
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }    
     public int getId() {
         return id;
     }
