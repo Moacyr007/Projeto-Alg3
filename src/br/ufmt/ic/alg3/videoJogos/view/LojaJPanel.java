@@ -7,6 +7,7 @@ package br.ufmt.ic.alg3.videoJogos.view;
 
 import br.ufmt.ic.alg3.videoJogos.persistencia.JogoPersistencia;
 import br.ufmt.ic.alg3.videoJogos.persistencia.arquivo.JogoPersistenciaArquivo;
+import br.ufmt.ic.alg3.videoJogos.view.cadastro.FormaDePagamentoJPanel;
 import br.ufmt.ic.alg3.videoJogos.view.tableModel.JogoTableModel;
 
 /**
@@ -19,7 +20,7 @@ public class LojaJPanel extends javax.swing.JPanel {
      * Creates new form LojaJPanel
      */
     JogoPersistencia banco = new JogoPersistenciaArquivo();
-    
+
     public LojaJPanel() {
         initComponents();
         this.add(jScrollPane1);
@@ -33,6 +34,7 @@ public class LojaJPanel extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         jScrollPane1 = new javax.swing.JScrollPane();
         LojajTable = new javax.swing.JTable();
@@ -43,40 +45,50 @@ public class LojaJPanel extends javax.swing.JPanel {
         setMinimumSize(new java.awt.Dimension(800, 600));
         setName(""); // NOI18N
         setPreferredSize(new java.awt.Dimension(800, 600));
+        setLayout(new java.awt.GridBagLayout());
 
         LojajTable.setModel(new JogoTableModel(banco.getAll()));
         jScrollPane1.setViewportView(LojajTable);
 
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 543;
+        gridBagConstraints.ipady = 413;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(87, 106, 11, 44);
+        add(jScrollPane1, gridBagConstraints);
+
         jLabel1.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 200));
         jLabel1.setText("Loja");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.ipady = 8;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(21, 36, 0, 0);
+        add(jLabel1, gridBagConstraints);
 
         jButton1.setText("Comprar");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addComponent(jLabel1))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(87, 87, 87)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)))
-        );
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        add(jButton1, new java.awt.GridBagConstraints());
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        this.removeAll();
+        this.add(new FormaDePagamentoJPanel());
+        this.setVisible(false);
+        this.setVisible(true);    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

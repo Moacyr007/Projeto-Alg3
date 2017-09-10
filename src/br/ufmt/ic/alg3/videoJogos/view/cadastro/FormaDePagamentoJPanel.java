@@ -26,6 +26,7 @@ public class FormaDePagamentoJPanel extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         formaDePagamentojLabel = new javax.swing.JLabel();
         cartaoDeCreditojButton = new javax.swing.JButton();
@@ -33,11 +34,45 @@ public class FormaDePagamentoJPanel extends javax.swing.JPanel {
         depositoEmContajButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
+        setLayout(new java.awt.GridBagLayout());
+
         formaDePagamentojLabel.setText("Forma de Pagamento");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.ipadx = 119;
+        gridBagConstraints.ipady = 34;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(11, 21, 0, 0);
+        add(formaDePagamentojLabel, gridBagConstraints);
 
         cartaoDeCreditojButton.setText("Cartão de Crédito");
+        cartaoDeCreditojButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cartaoDeCreditojButtonActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.ipadx = 19;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(18, 104, 0, 0);
+        add(cartaoDeCreditojButton, gridBagConstraints);
 
         boletoBancariojButton.setText("Boleto Bancário");
+        boletoBancariojButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                boletoBancariojButtonActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.ipadx = 31;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(11, 104, 0, 0);
+        add(boletoBancariojButton, gridBagConstraints);
 
         depositoEmContajButton.setText("Depósito em Conta");
         depositoEmContajButton.addActionListener(new java.awt.event.ActionListener() {
@@ -45,49 +80,43 @@ public class FormaDePagamentoJPanel extends javax.swing.JPanel {
                 depositoEmContajButtonActionPerformed(evt);
             }
         });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.ipadx = 15;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(11, 104, 64, 0);
+        add(depositoEmContajButton, gridBagConstraints);
 
         jLabel1.setText("Selecione uma forma de pagamento:");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(formaDePagamentojLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(104, 104, 104)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(depositoEmContajButton, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
-                            .addComponent(boletoBancariojButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(cartaoDeCreditojButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(80, 80, 80)
-                        .addComponent(jLabel1)))
-                .addContainerGap(96, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(formaDePagamentojLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(cartaoDeCreditojButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(boletoBancariojButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(depositoEmContajButton)
-                .addGap(64, 64, 64))
-        );
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(41, 80, 0, 96);
+        add(jLabel1, gridBagConstraints);
     }// </editor-fold>//GEN-END:initComponents
 
     private void depositoEmContajButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_depositoEmContajButtonActionPerformed
-        // TODO add your handling code here:
+        this.removeAll();
+        this.add(new DepositoEmContaJPanel());
+        this.setVisible(false);
+        this.setVisible(true);
     }//GEN-LAST:event_depositoEmContajButtonActionPerformed
+
+    private void cartaoDeCreditojButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cartaoDeCreditojButtonActionPerformed
+        this.removeAll();
+        this.add(new CartaoDeCreditoJPanel());
+        this.setVisible(false);
+        this.setVisible(true);
+    }//GEN-LAST:event_cartaoDeCreditojButtonActionPerformed
+
+    private void boletoBancariojButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boletoBancariojButtonActionPerformed
+this.removeAll();
+        this.add(new BoletoBancarioJPanel());
+        this.setVisible(false);
+        this.setVisible(true);    }//GEN-LAST:event_boletoBancariojButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
