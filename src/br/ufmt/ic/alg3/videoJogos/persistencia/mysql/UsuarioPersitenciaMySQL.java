@@ -21,10 +21,10 @@ public class UsuarioPersitenciaMySQL implements UsuarioPersistencia {
     public void inserir(Usuario usuario) {
         try {
             Connection con = DriverManager
-                    .getConnection("jdbc:mysql://localhost:3306/funeraria", "root", "123");
+                    .getConnection("jdbc:mysql://localhost:3306/videoogos", "root", "123");
             
             String sql = "insert into usuario "
-                    + "(nome,rg,telefone,endereco,email,cpf) "
+                    + "(nome, email,senha,dataNasc) "
                     + "values "
                     + "('"+usuario.getNome()+"',"
                     + " '"+usuario.getEmail()+"',"
