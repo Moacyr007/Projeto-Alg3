@@ -35,6 +35,7 @@ public class CartaoDeCreditoJPanel extends javax.swing.JPanel {
         boletoBancariojLabel = new javax.swing.JLabel();
         codSegurancajTextField = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setLayout(new java.awt.GridBagLayout());
 
@@ -98,6 +99,9 @@ public class CartaoDeCreditoJPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(18, 110, 0, 0);
         add(jLabel1, gridBagConstraints);
+
+        jButton1.setText("Concluir");
+        add(jButton1, new java.awt.GridBagConstraints());
     }// </editor-fold>//GEN-END:initComponents
 
 
@@ -106,6 +110,7 @@ public class CartaoDeCreditoJPanel extends javax.swing.JPanel {
     private javax.swing.JTextField codSegurancajTextField;
     private javax.swing.JLabel dataExjLabel;
     private javax.swing.JTextField dataExjTextField;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel numCartaojLabel;
     private javax.swing.JTextField numCartaojTextField;

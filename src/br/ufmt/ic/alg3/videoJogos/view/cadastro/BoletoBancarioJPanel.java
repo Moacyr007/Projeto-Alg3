@@ -33,6 +33,7 @@ public class BoletoBancarioJPanel extends javax.swing.JPanel {
         nBoletojTextField = new javax.swing.JTextField();
         bancojTextField = new javax.swing.JTextField();
         boletoBancariojLabel = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setLayout(new java.awt.GridBagLayout());
 
@@ -79,6 +80,9 @@ public class BoletoBancarioJPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(11, 21, 0, 0);
         add(boletoBancariojLabel, gridBagConstraints);
+
+        jButton1.setText("Concluir");
+        add(jButton1, new java.awt.GridBagConstraints());
     }// </editor-fold>//GEN-END:initComponents
 
 
@@ -86,6 +90,7 @@ public class BoletoBancarioJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel bancojLabel;
     private javax.swing.JTextField bancojTextField;
     private javax.swing.JLabel boletoBancariojLabel;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel nBoletojLabel;
     private javax.swing.JTextField nBoletojTextField;
     // End of variables declaration//GEN-END:variables

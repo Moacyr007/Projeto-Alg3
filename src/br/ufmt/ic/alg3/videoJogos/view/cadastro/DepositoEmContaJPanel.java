@@ -39,6 +39,7 @@ public class DepositoEmContaJPanel extends javax.swing.JPanel {
         dataExjLabel1 = new javax.swing.JLabel();
         contaDestjTextField = new javax.swing.JTextField();
         agenDestjTextField1 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
 
         setLayout(new java.awt.GridBagLayout());
 
@@ -136,6 +137,9 @@ public class DepositoEmContaJPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(6, 18, 0, 10);
         add(agenDestjTextField1, gridBagConstraints);
+
+        jButton1.setText("Concluir");
+        add(jButton1, new java.awt.GridBagConstraints());
     }// </editor-fold>//GEN-END:initComponents
 
 
@@ -149,6 +153,7 @@ public class DepositoEmContaJPanel extends javax.swing.JPanel {
     private javax.swing.JTextField contaOrgjTextField;
     private javax.swing.JLabel dataExjLabel;
     private javax.swing.JLabel dataExjLabel1;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField valorjTextField;
     // End of variables declaration//GEN-END:variables
