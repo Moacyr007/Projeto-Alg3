@@ -1,2 +1,2 @@
-﻿# Projeto da disciplina de Algoritmos 3 - Fnalizado - A nota final foi 01/10.
+﻿# Projeto da disciplina de Algoritmos 3 - Projeto descontinuado 
 		Vídeo Jogos Nas Interwebs  
